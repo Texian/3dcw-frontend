@@ -1,0 +1,43 @@
+// Variables
+$header-height: 100px;
+
+header {
+  height: $header-height;
+  background-color: cadetblue;
+}
+
+.App {
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: grid;
+  grid-template-rows: $header-height auto;
+  text-align: center;
+}
+
+.bladeMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat (5, 1fr);
+    grid-template-areas: 
+    "art code"
+    "art code"
+    "art code"
+    "about about"
+    "about about";
+
+    #artMenu {
+        grid-area: art;
+        background-color: orange;
+    }
+
+    #codeMenu {
+        grid-area: code;
+        background-color: green;
+    }
+
+    #aboutMenu {
+        grid-area: about;
+        background-color: purple;
+    }  
+}
+

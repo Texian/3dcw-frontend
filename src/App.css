@@ -1,5 +1,5 @@
 header {
-  height: 150px;
+  height: 100px;
   background-color: cadetblue;
 }
 
@@ -7,5 +7,27 @@ header {
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.3);
   display: grid;
+  grid-template-rows: 100px auto;
   text-align: center;
 }
+
+.bladeMenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat 5, 1fr;
+  grid-template-areas: "art code" "art code" "art code" "about about" "about about";
+}
+.bladeMenu #artMenu {
+  grid-area: art;
+  background-color: orange;
+}
+.bladeMenu #codeMenu {
+  grid-area: code;
+  background-color: green;
+}
+.bladeMenu #aboutMenu {
+  grid-area: about;
+  background-color: purple;
+}
+
+/*# sourceMappingURL=App.css.map */

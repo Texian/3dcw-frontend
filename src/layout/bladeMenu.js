@@ -2,10 +2,10 @@ import React from 'react';
 
 const BladeMenu = () => {
     return(
-        <div>
-            <div>Art Projects</div>
-            <div>Code Projects</div>
-            <div>About</div>
+        <div className="bladeMenu">
+            <div className="menuBlade" id="artMenu">Art Projects</div>
+            <div className="menuBlade" id="codeMenu">Code Projects</div>
+            <div className="menuBlade" id="aboutMenu">About</div>
         </div>
     )
 }
